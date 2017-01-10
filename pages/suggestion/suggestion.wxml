@@ -1,0 +1,28 @@
+<view class="container weather-list">
+    <block wx:for="{{weather}}" wx:for-item="i">
+        <block wx:for="{{i}}" wx:for-item="j">
+            <text class="basic">地点：{{j.basic.city}}-{{j.basic.cnty}}</text>
+            <view class="weather-item">
+                <text>舒适度指数：{{j.suggestion.comf.txt}}</text>
+            </view>
+            <view class="weather-item">
+                <text>洗车指数：{{j.suggestion.cw.txt}}</text>
+            </view>
+            <view class="weather-item">
+                <text>穿衣指数：{{j.suggestion.drsg.txt}}</text>
+            </view>
+            <view class="weather-item">
+                <text>感冒指数：{{j.suggestion.flu.txt}}</text>
+            </view>
+            <view class="weather-item">
+                <text>运动指数：{{j.suggestion.sport.txt}}</text>
+            </view>
+            <view class="weather-item">
+                <text>旅游指数：{{j.suggestion.trav.txt}}</text>
+            </view>
+            <view class="weather-item">
+                <text>紫外线指数：{{j.suggestion.uv.txt}}</text>
+            </view>
+        </block>
+    </block>
+</view>

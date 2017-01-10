@@ -1,0 +1,14 @@
+<view class="container weather-list">
+    <block wx:for="{{weather}}" wx:for-item="i">
+        <block wx:for="{{i}}" wx:for-item="j">
+            <text class="basic">地点：{{j.basic.city}}-{{j.basic.cnty}}</text>
+            <block wx:for="{{j.daily_forecast}}">
+                <view class="weather-item">
+                    <text>{{item.date}}</text>
+                    <text>{{item.cond.txt_d}}/{{item.cond.txt_n}}</text>
+                    <text>{{item.tmp.min}}~{{item.tmp.max}}</text>
+                </view>
+            </block>
+        </block>
+    </block>
+</view>

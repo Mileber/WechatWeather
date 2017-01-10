@@ -1,0 +1,9 @@
+<view class="container weather-list">
+    <block wx:for="{{weather}}" wx:for-item="i">
+        <block class="weather-item" wx:for="{{i}}" wx:for-item="j">
+            <text class="basic">地点：{{j.basic.city}}-{{j.basic.cnty}}</text>
+            <text class="basic">当前天气：{{j.now.cond.txt}}</text>
+            <text>体感温度：{{j.now.fl}}摄氏度</text>
+        </block>
+    </block>
+</view>

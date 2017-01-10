@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/weather/weather",
+    "pages/forcast/forcast",
+    "pages/suggestion/suggestion"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "简单天气",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "selectedColor": "#09BB07",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/weather/weather",
+      "text": "当前天气"
+    }, {
+      "pagePath": "pages/forcast/forcast",
+      "text": "7-10天预告"
+    }, {
+      "pagePath": "pages/suggestion/suggestion",
+      "text": "生活指数"
+    }]
+  }
+}
